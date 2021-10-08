@@ -13,97 +13,216 @@
   </style>
 </head>
 <body>
-  <header>
-    <h1>Social Media Dashboard</h1>
-    <p>Total Followers: 23,004</p>
-    Dark Mode
+  <div class="bg-white"></div>
+  <header class="header">
+    <div class="texts-container">
+      <h1 class="texts-container__title mode-title">Social Media Dashboard</h1>
+      <p class="texts-container__followers mode-subtitle">Total Followers: 23,004</p>
+    </div>
+    <div class="separater"></div>
+    <div class="theme-changer">
+      <p class="theme-title mode-subtitle">
+        Dark Mode
+      </p>
+      <label for="theme-switch" class="theme-switch">
+        <input type="checkbox" id="theme-switch">
+        <div class="circle"></div>
+        <div class="base"></div>
+      </label>
+    </div>
   </header>
-  <main>
-    <section>
-       <article>
-        <h4>@nathanf</h4>
-        <figure>
-          <img src="images/icon-facebook.svg" alt="@nathanf facebook">
-        </figure>
-        <p>1987Followers</p>
-        <p>12 Today</p>
-       </article>
-       <article>
-        <h4>@nathanf</h4>
-        <figure><img src="./images/icon-twitter.svg" alt="@nathanf twitter"></figure>
-        <p>1044 Followers</p>
-        <p>99 Today</p>
-       </article>
-       <article>
-        <h4>@realnathanf</h4>
-        <figure><img src="./images/icon-instagram.svg" alt="@realnathanf instagram"></figure>
-        <p>11k</p>
-        <p>Followers</p>
-        <p>1099 Today</p>
-       </article>
-       <article>
-         <h4>Nathan F.</h4>
-         <figure><img src="./images/icon-youtube.svg" alt="@Nathan F. youtube"></figure>
-         <p>8239 Subscribers</p>
-          <p>144 Today</p>
-       </article>
-      <h2>
-        Overview - Today
-      </h2>
+  <!-- header ends -->
+  <main class="main">
+    <section class="dashboard">
+      <div class="dashboard__lg-container">
+        <article class="dashboard__lg facebook modeBg">
+         <div class="user-icon-container">
+           <h4 class="author mode-title">@nathanf</h4>
+           <figure>
+             <img src="images/icon-facebook.svg" alt="@nathanf facebook">
+           </figure>
+         </div>
+         <div class="info-container">
+           <p class="info-number mode-title">1987<span class="followers mode-subtitle">Followers</span></p>
+           <figure class="today-followers">
+            <img src="./images/icon-up.svg" alt="number of followers increase">
+            <p class="info-today color-g">12 Today</p>
+           </figure>
+         </div>
+        </article>
+        <article class="dashboard__lg twitter modeBg">
+         <div class="user-icon-container">
+           <h4 class="author mode-subtitle">@nathanf</h4>
+           <figure>
+            <img src="./images/icon-twitter.svg" alt="@nathanf twitter">
+           </figure>
+         </div>
+         <div class="info-container">
+           <p class="info-number mode-title">1044<span class="followers mode-subtitle">Followers</span></p>
+           <figure class="today-followers">
+            <img src="./images/icon-up.svg" alt="number of followers increase">
+             <p class="info-today color-g">99 Today</p>
+           </figure>
+         </div>
+        </article>
+        <article class="dashboard__lg instagram modeBg">
+         <div class="user-icon-container">
+           <h4 class="author mode-subtitle">@realnathanf</h4>
+           <figure>
+            <img src="./images/icon-instagram.svg" alt="@realnathanf instagram">
+           </figure>
+         </div>
+         <div class="info-container">
+           <p class="info-number mode-title">11k<span class="followers mode-subtitle">Followers</span></p>
+           <figure class="today-followers">
+              <img src="./images/icon-up.svg" alt="number of followers increase">
+             <p class="info-today color-g">1099 Today</p>
+           </figure>
+         </div>
+        </article>
+        <article class="dashboard__lg youtube modeBg">
+         <div class="user-icon-container">
+           <h4 class="author mode-title">Nathan F.</h4>
+           <figure>
+            <img src="./images/icon-youtube.svg" alt="@Nathan F. youtube">
+           </figure>
+         </div>
+         <div class="info-container">
+           <p class="info-number mode-title">8239<span class="followers mode-subtitle">Subscribers</span></p>
+           <figure class="today-followers">
+             <img src="./images/icon-down.svg" alt="number of followers decrease">
+             <p class="info-today color-r">144 Today</p>
+           </figure>
+         </div>
+        </article>
+
       
-      <article>
-        <h5>Page Views</h5>
-        <figure><img src="images/icon-facebook.svg" alt="facebook page views"></figure>
-        <p>87</p>
-        <p>3%</p>
-      </article>
-      <article>
-        <h5>Likes</h5>
-        <figure><img src="images/icon-facebook.svg" alt="facebook likes"></figure>
-        <p>52</p>
-        <p>2%</p>
-      </article>
-      <article>
-        <h5>Likes</h5>
-        <figure><img src="./images/icon-instagram.svg" alt="instagram Likes"></figure>
-        <p>5462</p>
-        <p>2257%</p>
-      </article>
-      <article>
-        <h5>Profile Views</h5>
-        <figure><img src="./images/icon-instagram.svg" alt="instagram profile views"></figure>
-        <p>52k</p>
-        <p>1375%</p>
-      </article>
-      <article>
-        <h5>Retweets</h5>
-        <figure><img src="./images/icon-twitter.svg" alt="twitter Retweets"></figure>
-        <p>117</p>
-        <p>303%</p>
-      </article>
-      <article>
-        <h5>Likes</h5>
-        <figure><img src="./images/icon-twitter.svg" alt="twitter Likes"></figure>
-        <p>507</p>
-        <p>553%</p>
-      </article>
-      <article>
-        <h5>Likes</h5>
-        <figure><img src="./images/icon-youtube.svg" alt="youtube Likes"></figure>
-        <p>107</p>
-        <p>19%</p>
-      </article>
-      <article>
-        <h5>Total Views</h5>
-        <figure><img src="./images/icon-youtube.svg" alt="youtube Total Views"></figure>
-        <p>1407</p>
-        <p>12%</p>
-      </article>
+      </div>
+      
+        <h2 class="overview-title mode-title">
+          Overview - Today
+        </h2>
+
+
+      <div class="dashboard__sm-container">
+        <article class="dashboard__sm modeBg">
+          <div class="page-view-container">
+            <h5 class="pageview__title mode-subtitle">Page Views</h5>
+            <figure><img src="images/icon-facebook.svg" alt="facebook page views"></figure>
+          </div>
+          <div class="page-view-info-container">
+            <p class="view-info-number mode-title">87</p>
+            <figure class="today-followers">
+              <img src="./images/icon-up.svg" alt="number of followers increase">
+              <p class="view-info-percentage color-g">3%</p>
+            </figure>
+          </div>
+        </article>
+
+        <article class="dashboard__sm modeBg">
+          <div class="page-view-container">
+            <h5 class="pageview__title mode-subtitle">Likes</h5>
+            <figure><img src="images/icon-facebook.svg" alt="facebook page Likes"></figure>
+          </div>
+          <div class="page-view-info-container">
+            <p class="view-info-number mode-title">52</p>
+            <figure class="today-followers">
+              <img src="./images/icon-down.svg" alt="number of followers decrease">
+              <p class="view-info-percentage color-r">2%</p>
+            </figure>
+          </div>
+        </article>
+
+        <article class="dashboard__sm modeBg">
+          <div class="page-view-container">
+            <h5 class="pageview__title mode-subtitle">Likes</h5>
+            <figure><img src="./images/icon-instagram.svg" alt="instagram Likes"></figure>
+          </div>
+          <div class="page-view-info-container">
+            <p class="view-info-number mode-title">5462</p>
+            <figure class="today-followers">
+              <img src="./images/icon-up.svg" alt="number of followers increase">
+              <p class="view-info-percentage color-g">2257%</p>
+            </figure>
+          </div>
+        </article>
+
+        <article class="dashboard__sm modeBg">
+          <div class="page-view-container">
+            <h5 class="pageview__title mode-subtitle">Profile views</h5>
+            <figure><img src="./images/icon-instagram.svg" alt="instagram profile views"></figure>
+          </div>
+          <div class="page-view-info-container">
+            <p class="view-info-number mode-title">52K</p>
+            <figure class="today-followers">
+              <img src="./images/icon-up.svg" alt="number of followers increase">
+              <p class="view-info-percentage color-g">1375%</p>
+            </figure>
+          </div>
+        </article>
+
+        <article class="dashboard__sm modeBg">
+          <div class="page-view-container">
+            <h5 class="pageview__title mode-subtitle">Retweets</h5>
+            <figure><img src="./images/icon-twitter.svg" alt="twitter retweets number"></figure>
+          </div>
+          <div class="page-view-info-container">
+            <p class="view-info-number mode-title">117</p>
+            <figure class="today-followers">
+              <img src="./images/icon-up.svg" alt="number of followers increase">
+              <p class="view-info-percentage color-g">303%</p>
+            </figure>
+          </div>
+        </article>
+
+        <article class="dashboard__sm modeBg">
+          <div class="page-view-container">
+            <h5 class="pageview__title mode-subtitle">Likes</h5>
+            <figure><img src="./images/icon-twitter.svg" alt="twitter likes"></figure>
+          </div>
+          <div class="page-view-info-container">
+            <p class="view-info-number mode-title">507</p>
+            <figure class="today-followers">
+              <img src="./images/icon-up.svg" alt="number of followers increase">
+              <p class="view-info-percentage color-g">553%</p>
+            </figure>
+          </div>
+        </article>
+
+        <article class="dashboard__sm modeBg">
+          <div class="page-view-container">
+            <h5 class="pageview__title mode-subtitle">Likes</h5>
+            <figure><img src="./images/icon-youtube.svg" alt="youtube Likes"></figure>
+          </div>
+          <div class="page-view-info-container">
+            <p class="view-info-number mode-title">107</p>
+            <figure class="today-followers">
+              <img src="./images/icon-down.svg" alt="number of followers decrease">
+              <p class="view-info-percentage color-r">19%</p>
+            </figure>
+          </div>
+        </article>
+
+        <article class="dashboard__sm modeBg">
+          <div class="page-view-container">
+            <h5 class="pageview__title mode-subtitle">Total Views</h5>
+            <figure><img src="./images/icon-youtube.svg" alt="total views"></figure>
+          </div>
+          <div class="page-view-info-container">
+            <p class="view-info-number mode-title">1407</p>
+            <figure class="today-followers">
+              <img src="./images/icon-down.svg" alt="number of followers decrease">
+              <p class="view-info-percentage color-r">12%</p>
+            </figure>
+          </div>
+        </article>
+      </div>
     </section>
   </main>
   <!-- <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div> -->
+  <script src="./js/app.js"></script>
 </body>
 </html>
